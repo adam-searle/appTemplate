@@ -1,14 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { useTheme } from "@react-navigation/native";
 
-export default function HomeScreen() {
-  const { colors } = useTheme();
+export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text style={[styles.text, { color: colors.text }]}>
-        Welcome to CalmFocus
-      </Text>
+      <Text style={styles.text}>Profile Screen</Text>
     </View>
   );
 }
